@@ -51,7 +51,7 @@ always_ff @(posedge clk) begin
 
 end
 
-// holy parallelism batman
+// holy """parallelism""" batman
 calculator calc1(
 		.target(mem[row][col]),
 		.top(mem[row-1][col]),
