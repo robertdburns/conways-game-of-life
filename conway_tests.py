@@ -19,5 +19,5 @@ def print_mem_file(filename):
 
 
 if __name__ == "__main__":
-    print_mem_file("conway.mem")
+    print_mem_file("./tests/conway_tb/mem.txt")
     

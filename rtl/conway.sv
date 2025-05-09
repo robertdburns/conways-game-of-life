@@ -4,18 +4,20 @@ module conway(
 	input logic clk,
 	input logic rst,
 	input logic state,		// 0 = load, 1 = run
-	input logic [15:0]addr
+	input logic [15:0]addr,
+
+	output logic next_gen
 
 );
 
-logic [255:0] mem[255:0];	// 256x256 memory for the grid
+logic [255:0] mem[0:255];	// 256x256 memory for the grid
 
-logic [255:0] mem_next[255:0];	// 256x256 memory for the next generation
+logic [255:0] mem_next[0:255];	// 256x256 memory for the next generation
 
 initial begin
-	 for (int i = 0; i < 16; i++) begin
+	 for (int i = 0; i < 255; i++) begin
 		// Initialize the memory to zeroes
-		for (int j = 0; j < 16; j++) begin
+		for (int j = 0; j < 255; j++) begin
 			mem[i][j] = 0;
 		end
 	 end
@@ -25,6 +27,7 @@ logic [7:0] row = 0;
 logic [7:0] col = 0;
 
 always_ff @(posedge clk) begin
+	next_gen <= 0;	// Reset next_gen at the start of each clock cycle
 	if (rst) begin
 		for (int i = 0; i < 256; i++) begin
 			for (int j = 0; j < 256; j++) begin
@@ -35,12 +38,13 @@ always_ff @(posedge clk) begin
 	if (!state) mem[addr[15:8]][addr[7:0]] <= 1;
 
 	else begin
-		if (col == 239) begin
+		if (col == 0 && row == 0) $writememb("mem.txt", mem);
+		if (col >= 239) begin
 			col <= 0;
 			if (row == 255) begin
 				row <= 0;
 				mem <= mem_next;
-				$writememb("mem.txt", mem);
+				next_gen <= 1;
 			end else begin
 				row <= row + 1;
 			end
