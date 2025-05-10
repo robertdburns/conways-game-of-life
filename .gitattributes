@@ -1,0 +1,5 @@
+# Exclude all files in the assets folder (e.g., images, gifs)
+assets/** linguist-vendored
+
+# Exclude all files in the docs folder from language stats
+docs/** linguist-documentation
