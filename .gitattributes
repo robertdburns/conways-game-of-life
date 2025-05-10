@@ -1,5 +1,8 @@
 # Exclude all files in the assets folder (e.g., images, gifs)
 assets/** linguist-vendored
 
-# Exclude all files in the docs folder from language stats
+# Exclude all documentation files
 docs/** linguist-documentation
+
+# Exclude build artifacts or generated files from language stats
+tests/conway_tb/obj_dir/** linguist-generated
