@@ -43,7 +43,7 @@ Vconway_tb__Syms::Vconway_tb__Syms(VerilatedContext* contextp, const char* namep
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(16670);
+        Verilated::stackCheck(16782);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-9);
     _vm_contextp__->timeprecision(-12);

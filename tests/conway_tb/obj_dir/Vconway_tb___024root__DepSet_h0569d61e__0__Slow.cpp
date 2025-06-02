@@ -10,8 +10,14 @@ VL_ATTR_COLD void Vconway_tb___024root___eval_initial__TOP(Vconway_tb___024root*
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vconway_tb___024root___eval_initial__TOP\n"); );
     Vconway_tb__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Init
+    VlWide<4>/*127:0*/ __Vtemp_1;
     // Body
-    vlSymsp->_vm_contextp__->dumpfile(std::string{"tb_.vcd"});
+    __Vtemp_1[0U] = 0x2e766364U;
+    __Vtemp_1[1U] = 0x6e776179U;
+    __Vtemp_1[2U] = 0x625f636fU;
+    __Vtemp_1[3U] = 0x74U;
+    vlSymsp->_vm_contextp__->dumpfile(VL_CVT_PACK_STR_NW(4, __Vtemp_1));
     vlSymsp->_traceDumpOpen();
     vlSelfRef.conway_tb__DOT__uut__DOT__unnamedblk1__DOT__i = 0U;
     while (VL_GTS_III(32, 0xffU, vlSelfRef.conway_tb__DOT__uut__DOT__unnamedblk1__DOT__i)) {

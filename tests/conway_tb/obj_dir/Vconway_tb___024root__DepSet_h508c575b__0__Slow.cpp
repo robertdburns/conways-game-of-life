@@ -119,20 +119,6 @@ VL_ATTR_COLD void Vconway_tb___024root___stl_sequent__TOP__0(Vconway_tb___024roo
                  [(0xffU & ((IData)(1U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__row)))][
                  ((IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col) 
                   >> 5U)] >> (0x1fU & (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))));
-    vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc15__bottom_right 
-        = (1U & (vlSelfRef.conway_tb__DOT__uut__DOT__mem
-                 [(0xffU & ((IData)(1U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__row)))][
-                 (7U & (((IData)(0xfU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                        >> 5U))] >> (0x1fU & ((IData)(0xfU) 
-                                              + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc16__top 
-        = (1U & (vlSelfRef.conway_tb__DOT__uut__DOT__mem
-                 [(0xffU & ((IData)(vlSelfRef.conway_tb__DOT__uut__DOT__row) 
-                            - (IData)(1U)))][(7U & 
-                                              (((IData)(0xfU) 
-                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                               >> 5U))] 
-                 >> (0x1fU & ((IData)(0xfU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
     vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc2__target 
         = (1U & (vlSelfRef.conway_tb__DOT__uut__DOT__mem
                  [vlSelfRef.conway_tb__DOT__uut__DOT__row][
@@ -217,6 +203,20 @@ VL_ATTR_COLD void Vconway_tb___024root___stl_sequent__TOP__0(Vconway_tb___024roo
                  (7U & (((IData)(0xeU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
                         >> 5U))] >> (0x1fU & ((IData)(0xeU) 
                                               + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
+    vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc15__bottom_right 
+        = (1U & (vlSelfRef.conway_tb__DOT__uut__DOT__mem
+                 [(0xffU & ((IData)(1U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__row)))][
+                 (7U & (((IData)(0xfU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
+                        >> 5U))] >> (0x1fU & ((IData)(0xfU) 
+                                              + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
+    vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc16__top 
+        = (1U & (vlSelfRef.conway_tb__DOT__uut__DOT__mem
+                 [(0xffU & ((IData)(vlSelfRef.conway_tb__DOT__uut__DOT__row) 
+                            - (IData)(1U)))][(7U & 
+                                              (((IData)(0xfU) 
+                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
+                                               >> 5U))] 
+                 >> (0x1fU & ((IData)(0xfU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
     vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc1__bottom_right 
         = (1U & (vlSelfRef.conway_tb__DOT__uut__DOT__mem
                  [(0xffU & ((IData)(1U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__row)))][
@@ -970,242 +970,6 @@ VL_ATTR_COLD void Vconway_tb___024root___stl_sequent__TOP__0(Vconway_tb___024roo
         vlSelfRef.conway_tb__DOT__uut__DOT__calc16__DOT__count 
             = (7U & ((IData)(1U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc16__DOT__count)));
     }
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][((IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col) 
-                                                                                >> 5U)] 
-        = (((~ ((IData)(1U) << (0x1fU & (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            ((IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col) 
-             >> 5U)]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc1__target)
-                           ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc1__DOT__count)) 
-                              | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc1__DOT__count)))
-                           : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc1__DOT__count))) 
-                         << (0x1fU & (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(1U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(1U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(1U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc2__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc2__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc2__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc2__DOT__count))) 
-                                << (0x1fU & ((IData)(1U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(2U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(2U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(2U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc3__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc3__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc3__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc3__DOT__count))) 
-                                << (0x1fU & ((IData)(2U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(3U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(3U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(3U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc4__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc4__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc4__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc4__DOT__count))) 
-                                << (0x1fU & ((IData)(3U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(4U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(4U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(4U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc5__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc5__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc5__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc5__DOT__count))) 
-                                << (0x1fU & ((IData)(4U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(5U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(5U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(5U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc6__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc6__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc6__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc6__DOT__count))) 
-                                << (0x1fU & ((IData)(5U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(6U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(6U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(6U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc7__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc7__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc7__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc7__DOT__count))) 
-                                << (0x1fU & ((IData)(6U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(7U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(7U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(7U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc8__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc8__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc8__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc8__DOT__count))) 
-                                << (0x1fU & ((IData)(7U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(8U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(8U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(8U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc9__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc9__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc9__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc9__DOT__count))) 
-                                << (0x1fU & ((IData)(8U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(9U) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(9U) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(9U) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc10__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc10__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc10__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc10__DOT__count))) 
-                                << (0x1fU & ((IData)(9U) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(0xaU) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(0xaU) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(0xaU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc11__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc11__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc11__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc11__DOT__count))) 
-                                << (0x1fU & ((IData)(0xaU) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(0xbU) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(0xbU) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(0xbU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc12__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc12__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc12__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc12__DOT__count))) 
-                                << (0x1fU & ((IData)(0xbU) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(0xcU) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(0xcU) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(0xcU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc13__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc13__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc13__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc13__DOT__count))) 
-                                << (0x1fU & ((IData)(0xcU) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(0xdU) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(0xdU) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(0xdU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc14__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc14__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc14__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc14__DOT__count))) 
-                                << (0x1fU & ((IData)(0xdU) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(0xeU) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(0xeU) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(0xeU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc15__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc15__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc15__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc15__DOT__count))) 
-                                << (0x1fU & ((IData)(0xeU) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
-    vlSelfRef.conway_tb__DOT__uut__DOT__mem_next[vlSelfRef.conway_tb__DOT__uut__DOT__row][(7U 
-                                                                                & (((IData)(0xfU) 
-                                                                                + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                                                                                >> 5U))] 
-        = (((~ ((IData)(1U) << (0x1fU & ((IData)(0xfU) 
-                                         + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col))))) 
-            & vlSelfRef.conway_tb__DOT__uut__DOT__mem_next
-            [vlSelfRef.conway_tb__DOT__uut__DOT__row][
-            (7U & (((IData)(0xfU) + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)) 
-                   >> 5U))]) | (((IData)(vlSelfRef.conway_tb__DOT__uut__DOT____Vcellinp__calc16__target)
-                                  ? ((2U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc16__DOT__count)) 
-                                     | (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc16__DOT__count)))
-                                  : (3U == (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__calc16__DOT__count))) 
-                                << (0x1fU & ((IData)(0xfU) 
-                                             + (IData)(vlSelfRef.conway_tb__DOT__uut__DOT__col)))));
 }
 
 VL_ATTR_COLD void Vconway_tb___024root___eval_triggers__stl(Vconway_tb___024root* vlSelf);

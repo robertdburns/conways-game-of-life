@@ -29,7 +29,7 @@ module conway_tb;
 
 	initial begin
     // Name as needed
-    $dumpfile("tb_.vcd");
+    $dumpfile("tb_conway.vcd");
     $dumpvars(0);
 end
 
@@ -56,16 +56,22 @@ end
 		addr = 16'h03fe; // Load address
 		#10;
         state = 1; // Start running
+		#20
 
-		#20;
-		 wait(next_gen == 1);
+		// for (logic [7:0] i = 0; i <= 8'd0; i++) begin
+		// 	wait(next_gen == 1);		// generation 1
+		// 	$display("Generation %0d", i);
+		//  	#20;
+		// end
+
+		 wait(next_gen == 1);		// generation 1
 		 #20;
-		 wait(next_gen == 1);
+		 wait(next_gen == 1); 		// generation 2
 		 #20;
-		 wait(next_gen == 1);
-		 #20;
-		 wait(next_gen == 1);
-		 #20;
+		//  wait(next_gen == 1);		// generation 3
+		//  #20;
+		//  wait(next_gen == 1);		// generation 4
+		//  #20;
         $finish;
     end
 

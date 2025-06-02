@@ -16,7 +16,7 @@ module calculator(
 
 logic [2:0] count;	// Count of live neighbors;
 
-always_comb begin
+always_comb begin	
 	count = 0;
 	if (top) count++;
 	if (top_right) count++;
