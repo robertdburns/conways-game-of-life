@@ -1,6 +1,10 @@
 # **Conway's Game of Life**
 ### Robert Burns, Robert Bloomfield
 
+---
+
+# Midterm Project
+
 For our Midterm Project we made Conway's Game of Life in hardware, using 16x parallelization. The game consists of cells on a 256x256 board, and the cells are either dead (0) or alive (1). The game is 'played' by the following rules:
 
 1. Any live cell with fewer than two live neighbors dies, as if by underpopulation. 
@@ -41,3 +45,17 @@ If you would like to try this yourself:
 we were able to pass ```make lint``` and ```make tests```, but we got stuck with ```make itests``` due to an error with updating our memory on line 84 ```mem <= mem_next;```. This error was also shown in our ```make openlane``` where it failed on step 4 for a similar issue, as shown in the picture below.
 ![Make Openlane Error](assets/CGoL-error.JPG)
 mainly with the line *ERROR: Insufficient number of array indices for mem_next;*, even when ```logic [255:0] mem[0:255]``` is the same size as ```logic [255:0] mem_next[0:255]```. We will be able to fix this error for the final project, and include other features.
+
+---
+
+# **Final Project Updates**
+## Overall Changes Since The Midterm
+
+1. Replaced olf 2-D array logic with memory access.
+2. Changed to an FSM.
+3. changed ```calculator``` instantiations to be done with ```genvar``` syntax.
+4. adding macros for 64x ```calculator``` and 2x ```dffram128x32```.
+
+## Testing
+
+## Openlane / Openroad
