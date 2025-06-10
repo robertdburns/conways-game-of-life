@@ -74,4 +74,5 @@ We were able to get the tests running as we had in the Midterm project after a f
 2. in the terminal run ```python3 conway_tests.py > visuals.txt``` (can use any other output file name, ```visual.txt``` was just the name we used)
 3. view the output ```.txt``` file, with black squares being dead cells and white squares being alive cells
 
-## Openlane / Openroad
+
+*fin*
