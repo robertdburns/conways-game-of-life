@@ -54,8 +54,9 @@ mainly with the line *ERROR: Insufficient number of array indices for mem_next;*
 1. Replaced olf 2-D array logic with memory access.
 2. Changed to an FSM.
 3. Changed ```calculator``` instantiations to be done with ```genvar``` syntax.
-4. Added macros for 64x ```calculator``` and 2x ```dffram128x32```.
-5. Shrunk game size from 256x256 to 64x64
+4. Added macros for 2x ```dffram128x32```.
+5. Shrunk game size from 256x256 to 64x64.
+6. Increased Parallelization from 16x to 64x
 
 The change from a 2-D array to memory writing and access was difficult, as this project is more oriented towards a 2-D array and instant array value access. The hardest part of updating this project was trying to write specific bits during the load phase and to be able to format a 128x32 memory as a 64x64 memory. If we needed to access 1 bit, instead of just getting it directly from an array access, it had to be a memory read operation, taking longer and being more difficult logically. 
 
