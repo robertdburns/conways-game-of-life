@@ -60,10 +60,17 @@ mainly with the line *ERROR: Insufficient number of array indices for mem_next;*
 The change from a 2-D array to memory writing and access was difficult, as this project is more oriented towards a 2-D array and instant array value access. The hardest part of updating this project was trying to write specific bits during the load phase and to be able to format a 128x32 memory as a 64x64 memory. If we needed to access 1 bit, instead of just getting it directly from an array access, it had to be a memory read operation, taking longer and being more difficult logically. 
 
 ## FSM Diagram
-![FSM Diagram](assets/CPE470FSM.jpg)
+![FSM Diagram](assets/CPE470FSM.JPG)
+
+The FSM starts in the INIT state, where it loads all 0s into the Memory block. After it has loaded all of the values, it transitions to the LOAD state, where it loads all alive cells that you write in with the testbench. After this, it goes into a loop of calculations, going from loading the needed values for calculation (MEM_ACCESS), then takes 1 clock cycle for combinational logic for checking which cells will be alive and which will be dead (CALC), then finally stores the updated row in the holdimg memory (hRAM) during the next cycle (MEM_STORE). This cycle is repeated for all 64 rows. Finally, it will go into the MEM_TRANSFER state, where it transfers the data in the hRAM (Holding RAM), back to the wRam (Writing RAM), which is what is checked each generation. Once this new generation has been written, the ```newgen``` signal goes high for a clock cycle, then goes low, and a new generation starts.
 
 ## Testing
 
 We worked with a SystemVerilog testbench for this project, as we already had a working one from the previous part of this project. We would wait until a ```newgen``` signal went high and check the results of the memory dump. Due to the change from 2-D array to memory, we had to change from using ```$writememb``` to using file pointers to write to memory, as ```$writememb``` only overwrites, it can not append, and we needed to append new data every clock cycle during one of the stages of our FSM.
+
+We were able to get the tests running as we had in the Midterm project after a full refactor. Tests can be run using the following process:
+1. 
+2. 
+3. 
 
 ## Openlane / Openroad
