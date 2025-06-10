@@ -70,8 +70,8 @@ The FSM starts in the INIT state, where it loads all 0s into the Memory block. A
 We worked with a SystemVerilog testbench for this project, as we already had a working one from the previous part of this project. We would wait until a ```newgen``` signal went high and check the results of the memory dump. Due to the change from 2-D array to memory, we had to change from using ```$writememb``` to using file pointers to write to memory, as ```$writememb``` only overwrites, it can not append, and we needed to append new data every clock cycle during one of the stages of our FSM.
 
 We were able to get the tests running as we had in the Midterm project after a full refactor. Tests can be run using the following process:
-1. 
-2. 
-3. 
+1. XX
+2. XX
+3. XX
 
 ## Openlane / Openroad
