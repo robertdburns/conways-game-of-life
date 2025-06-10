@@ -53,9 +53,14 @@ mainly with the line *ERROR: Insufficient number of array indices for mem_next;*
 
 1. Replaced olf 2-D array logic with memory access.
 2. Changed to an FSM.
-3. changed ```calculator``` instantiations to be done with ```genvar``` syntax.
-4. adding macros for 64x ```calculator``` and 2x ```dffram128x32```.
+3. Changed ```calculator``` instantiations to be done with ```genvar``` syntax.
+4. Added macros for 64x ```calculator``` and 2x ```dffram128x32```.
+5. Shrunk game size from 256x256 to 64x64
+
+The change from a 2-D array to memory writing and access was difficult, as this project is more oriented towards a 2-D array and instant array value access. The hardest part of updating this project was trying to write specific bits during the load phase and to be able to format a 128x32 memory as a 64x64 memory. If we needed to access 1 bit, instead of just getting it directly from an array access, it had to be a memory read operation, taking longer and being more difficult logically. 
 
 ## Testing
+
+We worked with a SystemVerilog testbench for this project, as we already had a working one from the previous part of this project. We would wait until a ```newgen``` signal went high and check the results of the memory dump. Due to the change from 2-D array to memory, we had to change from using ```$writememb``` to using file pointers to write to memory, as ```$writememb``` only overwrites, it can not append, and we needed to append new data every clock cycle during one of the stages of our FSM.
 
 ## Openlane / Openroad
